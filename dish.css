@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    background: whitesmoke;
+    height: 100vh;
+    align-items: center;
+}
+.container{
+    display: flex;
+}
+ul{
+    float: right;
+    list-style-type: none;
+    margin-top: 10px;
+    min-height: 400px;
+    margin-right: 60px;
+    margin-bottom: 280px;
+    font-size: 17px;
+}
+ul li{
+    display: inline-block;
+}
+ul li a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    padding: 5px 20px;
+    border: 1px solid transparent;
+    transition: 0.5s ease;
+}
+ul li a:hover{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+.card-one{
+    position: relative;
+    height: 130px;
+    margin: 50px;
+    box-shadow: 5px 5px 20px black;
+    right: 290px;
+}
+.card-two{
+    position: relative;
+    height: 385px;
+    margin: 50px;
+    box-shadow: 5px 5px 20px black;
+    right: 340px;
+    width: 350px;
+}
+.card-three{
+    position: relative;
+    height: 390px;
+    margin: 50px;
+    box-shadow: 5px 5px 20px black;
+    left: 360px;
+    top: -455px;
+    width: 350px;
+}
+img{
+    height: 400px;
+    width: 350px;
+    border-radius: 3px;
+}
+.intro-one{
+    height: 52px;
+    width: 350px;
+    padding: 6px;
+    bottom: -270px;
+    box-sizing: border-box;
+    position: absolute;
+    background: rgba(27, 27, 27, .5);
+    color: #fff;
+    transition: .5s;
+}
+.intro-two{
+    height: 82px;
+    width: 350px;
+    padding: 6px;
+    bottom: -15px;
+    box-sizing: border-box;
+    position: absolute;
+    background: rgba(27, 27, 27, .5);
+    color: #fff;
+    transition: .5s;
+}
+.intro-three{
+    height: 57px;
+    width: 350px;
+    padding: 6px;
+    bottom: -10px;
+    box-sizing: border-box;
+    position: absolute;
+    background: rgba(27, 27, 27, .5);
+    color: #fff;
+    transition: .5s;
+}
+h1{
+    margin: 10px;
+    font-size: 20px;
+}
+p{
+    font-size: 20px;
+    margin: 20px;
+    visibility: hidden;
+    opacity: 0;
+}
+span{
+    font-weight: bold;
+}
+.card-one:hover{
+    cursor: pointer;
+}
+.card-two:hover{
+    cursor: pointer;
+}
+.card-three:hover{
+    cursor: pointer;
+}
+.card-one:hover .intro-one{
+    height: 260px;
+    bottom: -270px;
+    background: black;
+    transition: 0.9s ease;
+}
+.card-two:hover .intro-two{
+    height: 260px;
+    bottom: -15px;
+    background: black;
+    transition: 0.9s ease;
+}
+.card-three:hover .intro-three{
+    height: 260px;
+    bottom: -13px;
+    background: black;
+    transition: 0.9s ease;
+}
+.card-one:hover p{
+    opacity: 1;
+    visibility: visible;
+}
+.card-two:hover p{
+    opacity: 1;
+    visibility: visible;
+}
+.card-three:hover p{
+    opacity: 1;
+    visibility: visible;
+}
